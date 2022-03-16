@@ -156,7 +156,6 @@ Models={
     'Discriminator_mask':GAN.d_prepGDD['model']['discriminator_mask'],
     'CNN_classifier': Ptmodel.model,
     'CNN_extract': CNN,
-    'ML':Skmodel.model,
     'Xcols':Xcols,
     'seed':seed,
 }

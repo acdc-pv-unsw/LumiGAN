@@ -37,7 +37,15 @@ CNN_data_ratio = 300    #   Edit based on number of cell required for CNN and GA
 Val_data_ratio = 50     #   Validation dataset number of cells
 targetCol = "Eff_std_mmad"
 extraction_batch_size=11
-
+res={}
+res['CNN_extract']=Models['CNN_extract']
+res['CNN_classifier']=Models['CNN_classifier']
+res['Generator']=Models['Generator']
+res['Discriminator_img']=Models['Discriminator_img']
+res['Discriminator_mask']=Models['Discriminator_mask']
+res['Xcols']=Models['Xcols']
+res['seed']=Models['seed']
+SaveObj(res,model_path)
 All_df=pd.read_csv("TEST\\match.csv")  #   Load data here with path to images and I-V data
 ML=('AdaBoost',AdaBoostRegressor(base_estimator = DecisionTreeRegressor(), n_estimators=100, loss='square'))
 CNN_e=Models['CNN_extract']
