@@ -1,8 +1,12 @@
 # LumiGAN
 Trained CNN for feature extraction of luminescence images and GAN for reconstruction of luminescence images are stored in pickle files under LumiGAN/Models.
+
 defect_localisation.py -->  Run localisation algorithm on inputted dataset using GAN model
+
 loss_analysis.py --> Run efficiency loss estiamtation from set of images/defect location using GAN and CNN models
+
 model_training.py --> Train GAN models
+
 
 CNN-related training and fine-tuning can be done in https://github.com/acdc-pv-unsw/LumiNet
 
